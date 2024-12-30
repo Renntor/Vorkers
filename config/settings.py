@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 
+from django.conf.global_settings import AUTH_USER_MODEL
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,8 +21,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+
     'apps.users',
-    'apps.vorkers',
+    'apps.workers',
 
 ]
 
@@ -92,3 +96,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.User'
