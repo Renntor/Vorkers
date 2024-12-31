@@ -19,7 +19,7 @@ class TeamSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Worker
-        fields = ('id', 'full_name',)
+        fields = ('id', 'full_name', 'specialization')
 
 
 class WorkerSerializer(serializers.ModelSerializer):
