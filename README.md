@@ -41,11 +41,13 @@ GET /api/v1/team/<team_id>/WorkerList
     {
         "id": 1,
         "full_name": "Иванов",
+        "salary": 10000,
         "specialization": "Черновая отделка"
     },
     {
         "id": 3,
         "full_name": "Сидоров",
+        "salary": 10000,
         "specialization": "Бригадир"
     }
 ]
